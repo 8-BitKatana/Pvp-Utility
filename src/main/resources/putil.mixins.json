@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "net.pyro.putil.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"ExampleMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

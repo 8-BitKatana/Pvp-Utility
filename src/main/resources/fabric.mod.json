@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "putil",
+	"version": "${version}",
+	"name": "PVP Utility",
+	"description": "Basic Server-side mod the ads more features creating interesting Pvp",
+	"authors": [
+		"Me! - Pyro-T3chnical"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/putil/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.pyro.putil.PVPUtility"
+		],
+		"fabric-datagen": [
+			"net.pyro.putil.PVPUtilityDataGenerator"
+		],
+		"client": [
+			"net.pyro.putil.PVPUtilityClient"
+		]
+	},
+	"mixins": [
+		"putil.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.2",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
